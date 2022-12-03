@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87efd5bd-e210-444b-be2a-86469d91a70e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/db-scripts/db-scripts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db-scripts/one-one-db-scripts.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db-scripts.sql" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/InstructorDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/skm/hibernate/test/CreateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/skm/hibernate/test/DeleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/lakhi_sun/Documents/GitHub/spring-ws/hibernate-complete-guide/lib",
+    "last_opened_file_path": "/Users/lakhi_sun/Documents/GitHub/spring-ws/hibernate-complete-guide",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -39,10 +49,43 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.skm.hibernate.test" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CreateTest">
+    <configuration name="CreateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.skm.hibernate.test.CreateTest" />
+      <module name="hibernate-complete-guide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.skm.hibernate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeleteTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.skm.hibernate.test.DeleteTest" />
+      <module name="hibernate-complete-guide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.skm.hibernate.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.skm.hibernate.TestJDBC" />
       <module name="hibernate-complete-guide" />
@@ -58,6 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CreateTest" />
+        <item itemvalue="Application.DeleteTest" />
         <item itemvalue="Application.TestJDBC" />
       </list>
     </recent_temporary>
