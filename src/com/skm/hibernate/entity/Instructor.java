@@ -1,6 +1,8 @@
 package com.skm.hibernate.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "instructor")
@@ -22,8 +24,28 @@ public class Instructor {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "instructor_detail_id")
     private InstructorDetail instructorDetail;
+    /**
+     * Here we are telling that an Instructor can have many courses
+     * and the value inside mappedBy is the property name for Instructor Type inside Course Class
+     */
+    @OneToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH}, mappedBy = "instructor")
+    private List<Course> courseList;
 
     public Instructor() {
+    }
+
+    public Instructor(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    public List<Course> getCourseList() {
+        return courseList;
+    }
+
+    public void setCourseList(List<Course> courseList) {
+        this.courseList = courseList;
     }
 
     public int getId() {
@@ -66,12 +88,6 @@ public class Instructor {
         this.instructorDetail = instructorDetail;
     }
 
-    public Instructor(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
-
     @Override
     public String toString() {
         return "Instructor{" +
@@ -81,5 +97,17 @@ public class Instructor {
                 ", email='" + email + '\'' +
                 ", instructorDetail=" + instructorDetail +
                 '}';
+    }
+
+    /**
+     * Helper for bidirectional relationship
+     */
+    public void addCourse(Course course) {
+        if (courseList == null) courseList = new ArrayList<>();
+        courseList.add(course);
+        /*
+         * Below line takes care or setting up the bidirectional relationship
+         */
+        course.setInstructor(this);
     }
 }
