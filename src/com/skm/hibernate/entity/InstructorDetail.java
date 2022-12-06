@@ -17,8 +17,16 @@ public class InstructorDetail {
      * Setting up bidirectional relationship between Instructor and Instructor Detail Class using mappedBy property
      * Here value in the mappedBy refers to the instructorDetail property inside Instructor class.
      */
-    @OneToOne(mappedBy = "instructorDetail", cascade = CascadeType.ALL,optional = false)
+    @OneToOne(mappedBy = "instructorDetail", cascade = CascadeType.ALL)
     private Instructor instructor;
+
+    public InstructorDetail() {
+    }
+
+    public InstructorDetail(String youtubeChannel, String hobby) {
+        this.youtubeChannel = youtubeChannel;
+        this.hobby = hobby;
+    }
 
     public Instructor getInstructor() {
         return instructor;
@@ -30,14 +38,6 @@ public class InstructorDetail {
          * To update the foreign key, we need to call the below method.
          */
         instructor.setInstructorDetail(this);
-    }
-
-    public InstructorDetail() {
-    }
-
-    public InstructorDetail(String youtubeChannel, String hobby) {
-        this.youtubeChannel = youtubeChannel;
-        this.hobby = hobby;
     }
 
     public int getId() {

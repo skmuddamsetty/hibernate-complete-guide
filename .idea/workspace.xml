@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87efd5bd-e210-444b-be2a-86469d91a70e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-scripts/one-one-db-scripts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db-scripts/one-one-db-scripts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/skm/hibernate/entity/InstructorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skm/hibernate/entity/InstructorDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/skm/hibernate/test/CreateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skm/hibernate/test/CreateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +56,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -137,5 +143,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

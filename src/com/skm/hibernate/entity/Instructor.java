@@ -28,7 +28,9 @@ public class Instructor {
      * Here we are telling that an Instructor can have many courses
      * and the value inside mappedBy is the property name for Instructor Type inside Course Class
      */
-    @OneToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH}, mappedBy = "instructor")
+    @OneToMany(fetch = FetchType.LAZY,
+            cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH},
+            mappedBy = "instructor")
     private List<Course> courseList;
 
     public Instructor() {
